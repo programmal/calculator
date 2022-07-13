@@ -69,7 +69,7 @@ displaynumbers.innerHTML = store;
 if (store == "0") {
 store = "1"
 displaynumbers.innerHTML = store;
-} else if (store > 0){
+} else{
  store += '1';
  displaynumbers.innerHTML = store;
 }})
@@ -78,7 +78,7 @@ two.addEventListener ('click', () => {
     if (store == "0") {
     store = "2"
     displaynumbers.innerHTML = store;
-    } else if (store > 0){
+    } else{
      store += "2";
      displaynumbers.innerHTML = store;
     }})
@@ -87,7 +87,7 @@ three.addEventListener ('click', () => {
     if (store == "0") {
     store = "3"
     displaynumbers.innerHTML = store;
-    } else if (store > 0){
+    } else{
      store += "3";
      displaynumbers.innerHTML = store;
     }})
@@ -96,7 +96,7 @@ four.addEventListener ('click', () => {
     if (store == "0") {
     store = "4"
     displaynumbers.innerHTML = store;
-    } else if (store > 0){
+    } else{
      store += "4";
      displaynumbers.innerHTML = store;
     }})
@@ -105,7 +105,7 @@ five.addEventListener ('click', () => {
     if (store == "0") {
     store = "5"
     displaynumbers.innerHTML = store;
-    } else if (store > 0){
+    } else{
      store += "5";
      displaynumbers.innerHTML = store;
     }})
@@ -114,7 +114,7 @@ six.addEventListener ('click', () => {
     if (store == "0") {
     store = "6"
     displaynumbers.innerHTML = store;
-    } else if (store > 0){
+    } else{
      store += "6";
      displaynumbers.innerHTML = store;
     }})
@@ -123,7 +123,7 @@ seven.addEventListener ('click', () => {
     if (store == "0") {
     store = "7"
     displaynumbers.innerHTML = store;
-    } else if (store > 0){
+    } else{
      store += "7";
      displaynumbers.innerHTML = store;
     }})
@@ -132,7 +132,7 @@ eight.addEventListener ('click', () => {
     if (store == "0") {
     store = "8"
     displaynumbers.innerHTML = store;
-    } else if (store > 0){
+    } else{
      store += "8";
      displaynumbers.innerHTML = store;
     }})
@@ -141,7 +141,7 @@ nine.addEventListener ('click', () => {
         if (store == "0") {
         store = "9"
         displaynumbers.innerHTML = store;
-        } else if (store > 0){
+        } else{
          store += "9";
          displaynumbers.innerHTML = store;
         }})
@@ -150,7 +150,7 @@ zero.addEventListener ('click', () => {
         if (store == "0") {
         store = "0"
         displaynumbers.innerHTML = store;
-        } else if (store > 0){
+        } else{
          store += "0";
          displaynumbers.innerHTML = store;
         }})
@@ -160,7 +160,7 @@ decpoint.addEventListener ('click', () => {
     if (decsearch = -1){
          store += ".";
          displaynumbers.innerHTML = store;
-        } else if (decsearch > -1){store+=""}})
+        } else if (decsearch > -1){}})
 
 clear.addEventListener ('click', () => {
     store = "0"
