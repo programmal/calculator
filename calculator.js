@@ -152,7 +152,10 @@ zero.addEventListener ('click', () => {
          displaynumbers.innerHTML = store;
         }})
 clear.addEventListener ('click', () => {
-    store = 0;
+    store = 0
+    a = 0
+    b = 0
+    resultnum = 0;
     displaynumbers.innerHTML = store;
       })
 
