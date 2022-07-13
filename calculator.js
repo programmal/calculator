@@ -64,7 +64,7 @@ displaynumbers.innerHTML = store;
  // button logic
  one.addEventListener ('click', () => {
 if (store == 0) {
-store += 1
+store = 1
 displaynumbers.innerHTML = store;
 } else if (store > 0){
  store += '1';
@@ -73,7 +73,7 @@ displaynumbers.innerHTML = store;
 
 two.addEventListener ('click', () => {
     if (store == 0) {
-    store += 2
+    store = 2
     displaynumbers.innerHTML = store;
     } else if (store > 0){
      store += "2";
@@ -82,7 +82,7 @@ two.addEventListener ('click', () => {
 
 three.addEventListener ('click', () => {
     if (store == 0) {
-    store += 3
+    store = 3
     displaynumbers.innerHTML = store;
     } else if (store > 0){
      store += "3";
@@ -91,7 +91,7 @@ three.addEventListener ('click', () => {
 
 four.addEventListener ('click', () => {
     if (store == 0) {
-    store += 4
+    store = 4
     displaynumbers.innerHTML = store;
     } else if (store > 0){
      store += "4";
@@ -100,7 +100,7 @@ four.addEventListener ('click', () => {
 
 five.addEventListener ('click', () => {
     if (store == 0) {
-    store += 5
+    store = 5
     displaynumbers.innerHTML = store;
     } else if (store > 0){
      store += "5";
@@ -109,7 +109,7 @@ five.addEventListener ('click', () => {
 
 six.addEventListener ('click', () => {
     if (store == 0) {
-    store += 6
+    store = 6
     displaynumbers.innerHTML = store;
     } else if (store > 0){
      store += "6";
@@ -118,7 +118,7 @@ six.addEventListener ('click', () => {
 
 seven.addEventListener ('click', () => {
     if (store == 0) {
-    store += 7
+    store = 7
     displaynumbers.innerHTML = store;
     } else if (store > 0){
      store += "7";
@@ -127,7 +127,7 @@ seven.addEventListener ('click', () => {
 
 eight.addEventListener ('click', () => {
     if (store == 0) {
-    store += 8
+    store = 8
     displaynumbers.innerHTML = store;
     } else if (store > 0){
      store += "8";
@@ -136,7 +136,7 @@ eight.addEventListener ('click', () => {
 
 nine.addEventListener ('click', () => {
         if (store == 0) {
-        store += 9
+        store = 9
         displaynumbers.innerHTML = store;
         } else if (store > 0){
          store += "9";
@@ -145,7 +145,7 @@ nine.addEventListener ('click', () => {
 
 zero.addEventListener ('click', () => {
         if (store == 0) {
-        store += 0
+        store = 0
         displaynumbers.innerHTML = store;
         } else if (store > 0){
          store += "0";
@@ -162,7 +162,7 @@ clear.addEventListener ('click', () => {
 plus.addEventListener ('click', () => {
     op = '+'
     a += parseInt(store, 10);
-    store = resultnum;
+    store = 0;
     console.log(a)
     displaynumbers.innerHTML = (" + ");
         })
@@ -175,13 +175,28 @@ minus.addEventListener ('click', () => {
     displaynumbers.innerHTML = (" - ");
         })
 
+mult.addEventListener ('click', () => {
+    op = '*'
+    a += parseInt(store, 10);
+    store = 0;
+    console.log(a)
+    displaynumbers.innerHTML = (" * ");
+        })
+
+divid.addEventListener ('click', () => {
+    op = '/'
+    a += parseInt(store, 10);
+    store = 0;
+    console.log(a)
+    displaynumbers.innerHTML = (" / ");
+        })
+
 equals.addEventListener ('click', () => {
     b += parseInt(store,10);
     console.log(b)
-    store = resultnum;
-    store = 0;
     operate (a, op, b)
-    a = resultnum
+    store = resultnum;
+    a = 0
     b = 0
     displaynumbers.innerHTML = (resultnum);
         })
